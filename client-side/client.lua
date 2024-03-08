@@ -11,8 +11,8 @@ vSERVER = Tunnel.getInterface("clothes")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- EVENTS
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterNetEvent("will_clothes:setClothes")
-AddEventHandler("will_clothes:setClothes",function(type)
+RegisterNetEvent("clothes:setClothes")
+AddEventHandler("clothes:setClothes",function(type)
     local ped = PlayerPedId()
     for k,v in pairs(Config.data) do
         if k == type then
